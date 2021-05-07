@@ -1,0 +1,23 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">{{firstName| titlecase}}<i (click)="sort('name')" class="fa fa-sort pl-2"></i></th>
+            <th scope="col">{{standard| titlecase}}<i (click)="sort('class')" class="fa fa-sort pl-2"></i></th>
+            <th scope="col">{{section| titlecase}}<i (click)="sort('section')" class="fa fa-sort pl-2"></i></th>
+            <th scope="col">{{sub1| titlecase}}<i (click)="sort('sub1')" class="fa fa-sort pl-2"></i></th>
+            <th scope="col">{{sub2| titlecase}}<i (click)="sort('sub2')" class="fa fa-sort pl-2"></i></th>
+            <th scope="col">{{sub3| titlecase}}<i (click)="sort('sub3')" class="fa fa-sort pl-2"></i></th>
+        </tr>
+    </thead>
+
+    <tbody *ngFor="let tabItem of tabItems">
+        <tr>
+            <td>{{tabItem.name}}</td>
+            <td>{{tabItem.class}}</td>
+            <td>{{tabItem.section}}</td>
+            <td>{{tabItem.sub1}}</td>
+            <td>{{tabItem.sub2}}</td>
+            <td>{{tabItem.sub3}}</td>
+        </tr>
+    </tbody>
+</table>

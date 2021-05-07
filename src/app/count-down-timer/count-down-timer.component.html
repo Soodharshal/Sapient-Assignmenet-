@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-lg-6 p-3 h-50">
+        <app-display-count-down [decrementCount]="decrementCount"></app-display-count-down>
+    </div>
+    <div class="col-lg-6 p-3">
+        <app-functionality-count-down (pauseCount)='pauseCounter($event)' [pauseCountVal]="pauseCountVal"
+            (valueChange)='displayCounter($event)'></app-functionality-count-down>
+    </div>
+    <div class="col-lg-6 p-3">
+        <app-logs-count-down-timer [started]="started" [pauseCount]="pauseCount">
+        </app-logs-count-down-timer>
+    </div>
+    <div class="col-lg-6 p-3">
+        <app-keep-record-count-down [started]="started" [pauseCount]="pauseCount"></app-keep-record-count-down>
+    </div>
+</div>

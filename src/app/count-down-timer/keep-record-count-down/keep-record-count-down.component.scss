@@ -1,0 +1,18 @@
+.displayBorder{
+    display: block;
+    height: 200px;
+    border: solid 1px
+}
+.displayInline{
+    display: flex;
+    justify-content: center;
+ align-content: center;
+ font-weight: bold;
+}
+.displayBlock{
+    display: flex;
+    justify-content: center;
+ align-content: center;
+ font-weight: bold;
+ font-size: 3rem;  
+}

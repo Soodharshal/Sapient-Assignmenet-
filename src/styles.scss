@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+$color-yellow-green:yellowgreen;
+$default-font-size:1.6rem;
+$parent-div-width:50rem;
+$parent-div-height:30rem;
+$padding-10:1rem;

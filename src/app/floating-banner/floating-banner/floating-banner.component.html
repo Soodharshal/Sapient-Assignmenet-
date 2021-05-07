@@ -1,0 +1,7 @@
+<div class="parent">
+    <ng-container *ngFor="let size of divSize;let i = index">
+        <div class="parent-div" [ngStyle]="setMyDiv(i)" [class.displayFlex]="size.isChildDiv === true">
+            <span [@rotateText]="state" *ngIf="size.isChildDiv"> A Floating banner text that keeps on rotating</span>
+        </div>
+    </ng-container>
+</div>

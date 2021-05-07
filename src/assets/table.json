@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Ram",
+        "class": "10th",
+        "section": "A",
+        "sub1": "Hindi",
+        "sub2": "English",
+        "sub3": "Math"
+    },
+    {
+        "name": "Shyam",
+        "class": "12th",
+        "section": "B",
+        "sub1": "Hindi",
+        "sub2": "SST",
+        "sub3": "Math"
+    },
+    {
+        "name": "Arjun",
+        "class": "5th",
+        "section": "A",
+        "sub1": "GK",
+        "sub2": "SST",
+        "sub3": "Geography"
+    }
+]

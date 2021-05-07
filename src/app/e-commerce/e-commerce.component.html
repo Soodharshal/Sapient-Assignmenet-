@@ -1,0 +1,25 @@
+<div class="container p-3">
+    <div class="formatIconDiv mr-3">
+        <i class="fa fa-th p-3" [class.addBorder]="viewType === 'grid'" (click)="sortBy('grid')" aria-hidden="true"></i>
+        <i class="fa fa-list p-3" [class.addBorder]="viewType ===  'list'" (click)="sortBy('list')"
+            aria-hidden="true"></i>
+    </div>
+    <select (change)="sortingBy($event)" class="form-select" aria-label="Default select example">
+        <option selected>Please select to Sort By </option>
+        <option value="{{arr.code}}" *ngFor="let arr of filterArray">{{arr.value}}</option>
+    </select>
+    <div class="row">
+        <div class="p-3 mb-3"
+            [ngClass]="{'col-lg-3' : viewType === 'grid','col-lg-6' : viewType !== 'grid' }"
+            *ngFor="let detail of ItemDetails">
+            <div [ngClass]="{'card' : viewType === 'grid','list-group' : viewType !== 'grid' }">
+                <img [ngClass]="{'card-img-top' : viewType === 'grid','listImageView' : viewType !== 'grid' }"
+                    src="{{detail.imgUrl}}" alt="Card image cap" loading="lazy">
+                <h5 [ngClass]="{'card-title':viewType === 'grid','imageTitle' : viewType !== 'grid' }">
+                    {{detail.title}}</h5>
+                <p [ngClass]="{'card-text' : viewType === 'grid','listDescription' : viewType !== 'grid' }"
+                    class="card-text">{{detail.textInfo}}</p>
+            </div>
+        </div>
+    </div>
+</div>

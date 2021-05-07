@@ -1,0 +1,41 @@
+
+@import '/src/styles.scss';
+
+.padding10{
+padding:$padding-10;
+}
+.addBorder{
+    margin : .5rem;
+    border :solid 2px;
+}
+.formatIconDiv{
+display: inline-block;
+margin: .1rem;
+background-color: $color-yellow-green;
+border-radius: 1.1rem;
+}
+
+img{
+    width:243px;
+    height: 180px;
+}
+.listImageView{
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+}
+.imageTitle{
+    position: absolute;
+    top: 25px;
+    left: 200px;
+}
+
+.listDescription{
+    position: absolute;
+    top: 53px;
+    left: 105px
+}
+.backgroundGray{
+    background-color: lightgray;
+}
